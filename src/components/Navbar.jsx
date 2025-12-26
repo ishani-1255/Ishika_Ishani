@@ -20,7 +20,7 @@ const Navbar = () => {
       </div>
       
       <div className="hidden md:flex gap-8 font-medium text-gray-600 font-sora">
-        {['About Me', 'Languages', 'Experience', 'Project', 'Certifications', 'Articles', 'Contact Me'].map((item, i) => (
+        {['About Me', 'Languages', 'Experience', 'Projects', 'Certifications', 'Articles', 'Contact Me'].map((item, i) => (
            <a key={i} href={`#${item.toLowerCase().split(' ')[0]}`} className="hover:text-black hover:-translate-y-0.5 transition-all duration-200">{item}</a>
         ))}
       </div>
