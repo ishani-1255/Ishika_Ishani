@@ -20,7 +20,7 @@ const Navbar = () => {
       </div>
       
       <div className="hidden md:flex gap-8 font-medium text-gray-600 font-sora">
-        {['About Me', 'Languages', 'Experience', 'Projects', 'Certifications', 'Articles', 'Contact Me'].map((item, i) => (
+        {['About Me', 'Languages', 'Experiences', 'Projects', 'Certifications', 'Articles', 'Contact Me'].map((item, i) => (
            <a key={i} href={`#${item.toLowerCase().split(' ')[0]}`} className="hover:text-black hover:-translate-y-0.5 transition-all duration-200">{item}</a>
         ))}
       </div>
@@ -31,7 +31,7 @@ const Navbar = () => {
  
       {isOpen && (
         <div className="absolute top-full left-0 w-full bg-white border-b border-gray-200 p-6 flex flex-col gap-6 md:hidden shadow-lg animate-in slide-in-from-top-5">
-           {['About Me', 'Skills', 'Projects', 'Contact Me'].map((item) => (
+           {['About Me', 'Languages', 'Experiences', 'Projects', 'Certifications', 'Articles', 'Contact Me'].map((item) => (
              <a key={item} href={`#${item.toLowerCase().split(' ')[0]}`} onClick={() => setIsOpen(false)} className="text-lg font-medium">{item}</a>
            ))}
         </div>
