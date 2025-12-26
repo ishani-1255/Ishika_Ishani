@@ -32,7 +32,6 @@ const Skills = () => {
     { name: 'Node.js', icon: <FaNodeJs size={32} />, color: '#16a34a' },
   ];
 
-  // Auto-cycle
   useEffect(() => {
     if (isPaused) return;
     const interval = setInterval(() => {
@@ -64,7 +63,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="px-6 py-16 md:px-16 bg-white font-sora">
+    <section id="languages" ref={sectionRef} className="px-6 py-16 md:px-16 bg-white font-sora">
       <style>{`
         .skill-card {
           opacity: 0;
